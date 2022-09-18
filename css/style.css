@@ -122,7 +122,8 @@ body {
     padding-right: 4.8rem;
     flex-direction: row;
     background-image: url(../images/bg-pattern-desktop.svg);
-    background-position: -59rem center;
+    background-position: 2.4rem 65%;
+    background-size: 35rem;
     gap: 2.4rem;
   }
   .faq-card__illustration .illustration-woman-mobile {
@@ -158,6 +159,8 @@ body {
   .faq-card {
     padding: 6.4rem 9.4rem 6.4rem 0;
     gap: 9rem;
+    background-position: -59rem 65%;
+    background-size:initial;
   }
   .illustration-woman {
     width: auto;
