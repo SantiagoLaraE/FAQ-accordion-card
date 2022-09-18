@@ -74,9 +74,7 @@ body {
   align-items: center;
   cursor: pointer;
   gap: 1.6rem;
-}
-.accordion__item.active .accordion__item-header{
-    margin-bottom: 1.6rem;
+  margin-bottom: 1.6rem;
 }
 .accordion__item-title {
   font-size: 1.4rem;
@@ -95,6 +93,7 @@ body {
   width: 1.2rem;
   height: 1.2rem;
   background: url(../images/icon-arrow-down.svg) center/contain no-repeat;
+  transition: transform .5s ease;
 }
 .accordion__item.active .accordion__item-title__icon{
     transform: rotate(180deg);
@@ -104,14 +103,9 @@ body {
   color: var(--text-color-2);
   line-height: 1.6;
   padding-right: 1.8rem;
-  height: 0;
-  overflow: hidden;
-  transform: scaleY(0);
+  transition: all .5s ease;
+  transform-origin: top;
 
-}
-.accordion__item.active .accordion__item-description {
-    height: auto;
-    transform: scaleY(1);
 }
 @media screen and (min-width: 760px) {
   .faq-card {
