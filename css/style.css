@@ -24,7 +24,7 @@ body {
   grid-template-rows: minmax(65rem, 1fr) 50px;
   gap: 2.4rem;
   place-items: center;
-  padding: 2.4rem 2.4rem 0 2.4rem;
+  padding: 2.4rem;
   min-height: 100vh;
 }
 .faq-card {
@@ -105,7 +105,17 @@ body {
   padding-right: 1.8rem;
   transition: all .5s ease;
   transform-origin: top;
+}
 
+/* ----- Attribution ----- */
+
+.attribution{
+    font-size: 1.6rem;
+    text-align: center;
+    color:#FFF;
+}
+.attribution a{
+    color: var(--secondary-color);
 }
 @media screen and (min-width: 760px) {
   .faq-card {
